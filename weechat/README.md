@@ -30,11 +30,19 @@ weechat
 /nick w67
 ```
 
+## Autoconnect
+
+```
+/set irc.server.ngircd.autoconnect on
+```
+
 ## Save
 
 ```weechat
 /save
 ```
+
+## Connect
 
 ```weechat
 /connect ngircd
