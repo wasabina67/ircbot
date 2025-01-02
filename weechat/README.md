@@ -36,6 +36,12 @@ weechat
 /set irc.server.ngircd.autoconnect on
 ```
 
+## Autojoin
+
+```weechat
+/set irc.server.ngircd.autojoin "#weechat,#freenode"
+```
+
 ## Save
 
 ```weechat
