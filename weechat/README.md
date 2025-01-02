@@ -10,6 +10,8 @@ weechat
 /exit
 ```
 
+## Server
+
 ```weechat
 /server add ngircd localhost/6667
 ```
@@ -17,6 +19,8 @@ weechat
 ```weechat
 /server list
 ```
+
+## Nick
 
 ```weechat
 /set irc.server.ngircd.nicks w67
