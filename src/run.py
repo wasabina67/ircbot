@@ -3,8 +3,12 @@ import irc.bot
 
 class Bot(irc.bot.SingleServerIRCBot):
 
-    def __init__(self, server="ngircd", port=6667, nickname="bot", channel="#botchannel"):
-        super().__init__(server_list=[(server, port)], nickname=nickname, realname=nickname)
+    def __init__(
+        self, server="ngircd", port=6667, nickname="bot", channel="#botchannel"
+    ):
+        super().__init__(
+            server_list=[(server, port)], nickname=nickname, realname=nickname
+        )
         self.nickname = nickname
         self.channel = channel
 
