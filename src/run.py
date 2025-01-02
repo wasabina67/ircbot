@@ -13,7 +13,8 @@ class Bot(irc.bot.SingleServerIRCBot):
 
 
 def main():
-    pass
+    b = Bot()
+    b.start()
 
 
 if __name__ == "__main__":
