@@ -1,3 +1,10 @@
+import irc.bot
+
+
+class Bot(irc.bot.SingleServerIRCBot):
+    pass
+
+
 def main():
     pass
 
