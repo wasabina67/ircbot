@@ -2,7 +2,9 @@ import irc.bot
 
 
 class Bot(irc.bot.SingleServerIRCBot):
-    pass
+
+    def __init__(self):
+        pass
 
 
 def main():
