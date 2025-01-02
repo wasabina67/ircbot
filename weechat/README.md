@@ -1,7 +1,13 @@
 # weechat
 
+## Start, Exit
+
 ```bash
 weechat
+```
+
+```weechat
+/exit
 ```
 
 ```weechat
