@@ -33,7 +33,3 @@ weechat
 ```weechat
 /join #bot
 ```
-
-```weechat
-/exit
-```
