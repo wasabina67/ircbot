@@ -37,6 +37,19 @@
 
 	// Configure tool-specific properties.
 	"customizations": {
+		"vscode": {
+			"extensions": [
+				"eamodio.gitlens",
+				"mhutchie.git-graph",
+				"ms-python.debugpy",
+				"ms-python.flake8",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"njpwerner.autodocstring",
+				"oderwat.indent-rainbow",
+				"shardulm94.trailing-spaces"
+			]
+		}
 	}
 
 	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
