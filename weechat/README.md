@@ -32,7 +32,7 @@ weechat
 
 ## Autoconnect
 
-```
+```weechat
 /set irc.server.ngircd.autoconnect on
 ```
 
@@ -46,6 +46,12 @@ weechat
 
 ```weechat
 /connect ngircd
+```
+
+## List
+
+```weechat
+/list
 ```
 
 ```weechat
