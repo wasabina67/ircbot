@@ -54,10 +54,22 @@ weechat
 /connect ngircd
 ```
 
+## Disconnect
+
+```weechat
+/disconnect ngircd
+```
+
 ## Join
 
 ```weechat
 /join #botchannel
+```
+
+## Close
+
+```weechat
+/close #botchannel
 ```
 
 ## List
