@@ -1,4 +1,4 @@
-import irc.bot
+import irc.bot  # type: ignore
 
 
 class Bot(irc.bot.SingleServerIRCBot):
