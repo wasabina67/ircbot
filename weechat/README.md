@@ -39,7 +39,7 @@ weechat
 ## Autojoin
 
 ```weechat
-/set irc.server.ngircd.autojoin "#weechat,#freenode"
+/set irc.server.ngircd.autojoin "#botchannel,#w67channel"
 ```
 
 ## Save
@@ -57,7 +57,7 @@ weechat
 ## Join
 
 ```weechat
-/join #bot
+/join #botchannel
 ```
 
 ## List
