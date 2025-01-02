@@ -1,1 +1,7 @@
-
+services:
+  bot:
+    build:
+      context: ./bot
+  ngircd:
+    build:
+      context: ./ngircd
