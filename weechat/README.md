@@ -48,12 +48,6 @@ weechat
 /connect ngircd
 ```
 
-## List
-
-```weechat
-/list
-```
-
 ## Join
 
 ```weechat
