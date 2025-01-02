@@ -1,4 +1,11 @@
 services:
+  ngircd:
+    build:
+      context: ./ngircd
+    ports:
+      - "6667:6667"
+    networks:
+      - mynetwork
   bot:
     build:
       context: ./bot
@@ -8,13 +15,6 @@ services:
       - mynetwork
     environment:
       - PYTHONUNBUFFERED=1
-  ngircd:
-    build:
-      context: ./ngircd
-    ports:
-      - "6667:6667"
-    networks:
-      - mynetwork
 
 networks:
   mynetwork:
