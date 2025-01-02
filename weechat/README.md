@@ -30,6 +30,12 @@ weechat
 /nick w67
 ```
 
+## Save
+
+```weechat
+/save
+```
+
 ```weechat
 /connect ngircd
 ```
