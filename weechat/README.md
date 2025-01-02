@@ -59,3 +59,9 @@ weechat
 ```weechat
 /join #bot
 ```
+
+## List
+
+```weechat
+/list
+```
