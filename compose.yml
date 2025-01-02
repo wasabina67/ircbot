@@ -2,6 +2,20 @@ services:
   bot:
     build:
       context: ./bot
+    depends_on:
+      - ngircd
+    networks:
+      - mynetwork
+    environment:
+      - PYTHONUNBUFFERED=1
   ngircd:
     build:
       context: ./ngircd
+    ports:
+      - "6667:6667"
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
