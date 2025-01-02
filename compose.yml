@@ -9,6 +9,9 @@ services:
   bot:
     build:
       context: .
+    volumes:
+      - ./src:/usr/src
+    tty: true
     depends_on:
       - ngircd
     networks:
