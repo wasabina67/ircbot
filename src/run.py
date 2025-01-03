@@ -20,6 +20,10 @@ class Bot(irc.bot.SingleServerIRCBot):
         print(f"[debug] {event.arguments[0]}")
         connection.join(self.channel)
 
+    def on_nicknameinuse(self, connection, event):
+        print("[debug] on_nicknameinuse has been called.")
+        connection.nick(connection.get_nickname() + "_")
+
 
 def main():
     b = Bot()
