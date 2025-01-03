@@ -47,6 +47,10 @@ class Bot(irc.bot.SingleServerIRCBot):
     def privmsg_time(self):
         self.connection.privmsg(self.channel, self.get_current_time())
 
+    def execute_command(self, command):
+        if command == "time":
+            self.privmsg_time()
+
 
 def main():
     b = Bot()
