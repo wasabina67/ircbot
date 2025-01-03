@@ -49,7 +49,7 @@ class Bot(irc.bot.SingleServerIRCBot):
 
     def execute_command(self, command):
         if command == "time":
-            self.privmsg_time()
+            pass
 
 
 def main():
