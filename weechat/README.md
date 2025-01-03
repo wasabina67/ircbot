@@ -77,3 +77,9 @@ weechat
 ```weechat
 /list
 ```
+
+## Msg
+
+```weechat
+/msg bot helloworld
+```
