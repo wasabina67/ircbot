@@ -30,7 +30,7 @@ class Bot(irc.bot.SingleServerIRCBot):
 
     def on_privmsg(self, connection, event):
         # connection.privmsg(event.source.nick, event.arguments[0])
-        pass
+        self.execute_command(event.arguments[0])
 
     def on_pubmsg(self, connection, event):
         # connection.privmsg(event.target, event.arguments[0])
