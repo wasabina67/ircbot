@@ -33,7 +33,7 @@ class Bot(irc.bot.SingleServerIRCBot):
         pass
 
     def on_pubmsg(self, connection, event):
-        pass
+        connection.privmsg(event.target, event.arguments[0])
 
     def get_current_time(self):
         jst_offset = 60 * 60 * 9
