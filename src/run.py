@@ -50,6 +50,8 @@ class Bot(irc.bot.SingleServerIRCBot):
     def execute_command(self, nick, command):
         if command == "time":
             self.connection.privmsg(nick, self.get_current_time())
+        elif command == "bye":
+            self.die("bye")
 
 
 def main():
