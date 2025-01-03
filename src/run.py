@@ -1,3 +1,5 @@
+import time
+
 import irc.bot  # type: ignore
 
 
@@ -23,6 +25,15 @@ class Bot(irc.bot.SingleServerIRCBot):
     def on_nicknameinuse(self, connection, event):
         print("[debug] on_nicknameinuse has been called.")
         connection.nick(connection.get_nickname() + "2")
+
+    def get_current_time(self):
+        return time.strftime("%Y-%m-%d (%a) %H:%M:%S")
+
+    def notice_time(self):
+        self.connection.notice(self.channel, self.get_current_time())
+
+    def privmsg_time(self):
+        self.connection.privmsg(self.channel, self.get_current_time())
 
 
 def main():
