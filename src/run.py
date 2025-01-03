@@ -30,7 +30,7 @@ class Bot(irc.bot.SingleServerIRCBot):
 
     def on_privmsg(self, connection, event):
         # connection.privmsg(event.source.nick, event.arguments[0])
-        self.execute_command(event.arguments[0])
+        self.execute_command(event.source.nick, event.arguments[0])
 
     def on_pubmsg(self, connection, event):
         # connection.privmsg(event.target, event.arguments[0])
@@ -47,9 +47,9 @@ class Bot(irc.bot.SingleServerIRCBot):
     def privmsg_time(self):
         self.connection.privmsg(self.channel, self.get_current_time())
 
-    def execute_command(self, command):
+    def execute_command(self, nick, command):
         if command == "time":
-            pass
+            self.connection.privmsg(nick, self.get_current_time())
 
 
 def main():
