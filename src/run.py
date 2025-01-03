@@ -36,7 +36,8 @@ class Bot(irc.bot.SingleServerIRCBot):
         pass
 
     def get_current_time(self):
-        jst_time = time.gmtime(time.time() + 60 * 60 * 9)
+        jst_offset = 60 * 60 * 9
+        jst_time = time.gmtime(time.time() + jst_offset)
         return time.strftime("%Y-%m-%d (%a) %H:%M:%S", jst_time)
 
     def notice_time(self):
