@@ -22,7 +22,7 @@ class Bot(irc.bot.SingleServerIRCBot):
 
     def on_nicknameinuse(self, connection, event):
         print("[debug] on_nicknameinuse has been called.")
-        connection.nick(connection.get_nickname() + "_")
+        connection.nick(connection.get_nickname() + "2")
 
 
 def main():
