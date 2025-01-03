@@ -30,6 +30,9 @@ class Bot(irc.bot.SingleServerIRCBot):
     def on_privmsg(self, connection, event):
         connection.privmsg(event.source.nick, event.arguments[0])
 
+    def on_pubmsg(self, connection, event):
+        pass
+
     def get_current_time(self):
         return time.strftime("%Y-%m-%d (%a) %H:%M:%S")
 
