@@ -28,7 +28,8 @@ class Bot(irc.bot.SingleServerIRCBot):
         connection.nick(connection.get_nickname() + "2")
 
     def on_privmsg(self, connection, event):
-        connection.privmsg(event.source.nick, event.arguments[0])
+        # connection.privmsg(event.source.nick, event.arguments[0])
+        pass
 
     def on_pubmsg(self, connection, event):
         pass
