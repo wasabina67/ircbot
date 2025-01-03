@@ -12,6 +12,9 @@ class Bot(irc.bot.SingleServerIRCBot):
         self.nickname = nickname
         self.channel = channel
 
+    def on_connect(self, connection, event):
+        print("[debug] on_connect has been called.")
+
     def on_welcome(self, connection, event):
         print("[debug] on_welcome has been called.")
         print(f"[debug] {event.arguments[0]}")
