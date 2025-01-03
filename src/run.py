@@ -22,6 +22,7 @@ class Bot(irc.bot.SingleServerIRCBot):
         print(f"[debug] {event.arguments[0]}")
         connection.join(self.channel)
         # self.reactor.scheduler.execute_every(10, self.notice_time)
+        self.reactor.scheduler.execute_every(10, self.privmsg_time)
 
     def on_nicknameinuse(self, connection, event):
         print("[debug] on_nicknameinuse has been called.")
