@@ -27,6 +27,9 @@ class Bot(irc.bot.SingleServerIRCBot):
         print("[debug] on_nicknameinuse has been called.")
         connection.nick(connection.get_nickname() + "2")
 
+    def on_privmsg(self, connection, event):
+        connection.privmsg(event.source.nick, event.arguments[0])
+
     def get_current_time(self):
         return time.strftime("%Y-%m-%d (%a) %H:%M:%S")
 
